@@ -32,7 +32,6 @@ class PostList extends Component {
   }
 
   render() {
-    console.log("The props are: ", this.props);
     return <div className="ui relaxed divided list">{this.renderedList()}</div>;
   }
 }

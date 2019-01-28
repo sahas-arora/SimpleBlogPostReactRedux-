@@ -4,7 +4,6 @@ import blogs from "../api/blogs";
 
 export let fetchPostsAndUsers = () => {
   return async (dispatch, getState) => {
-    console.log("About to fetch the posts.");
     await dispatch(fetchPosts());
 
     let userIds = _.uniq(_.map(getState().posts, "userId"));
